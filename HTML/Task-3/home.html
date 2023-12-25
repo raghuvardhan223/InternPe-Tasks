@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz App</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz App</h1>
+        <p id="question"></p>
+        <div id="options">
+            <button onclick="checkAnswer(0)"></button>
+            <button onclick="checkAnswer(1)"></button>
+            <button onclick="checkAnswer(2)"></button>
+            <button onclick="checkAnswer(3)"></button>
+            <button id="prev-btn" onclick="prevQuestion()">prev</button>
+            <button id="next-btn" onclick="nextQuestion()">Next</button>
+
+        </div>
+
+    </div>
+
+    <script src="home.js"></script>
+</body>
+</html>
