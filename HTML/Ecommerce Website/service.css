@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:500'); 
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    background-color: #24252A;
+    color:#edf0f1
+  
+  }
+   li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:#edf0f1;
+    text-decoration: none;
+   }
+  header{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #24242A;
+    border-bottom:2px solid #ccc;
+
+   }
+   .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: #f5f5f5;
+    padding: 20px;
+    transition: left 0.3s ease;
+    order:4;
+  }
+  
+  .sidebar-icon {
+    color: #0da90a;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .sidebar-menu li {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .show-sidebar {
+    left: 0;
+  }
+  
+   .logo{
+    cursor: pointer;
+    margin-right: auto;
+    
+   }
+   .nav_links{
+    list-style: none;
+   }
+   .nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+  
+   }
+   .nav_links li a{
+    transition: all 0.3s ease 0s;
+   }
+  .nav_links li a:hover{
+   color: #0088A9;
+  
+  }
+  button{
+    padding:9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: auto;
+   
+  }
+  button:hover{
+    background-color: rgba(0, 136, 169, 1) ;
+  }
+  
+  .cta{
+    order:2;
+  }
+  
+  body {
+    
+    margin: 0 auto;
+    
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent; /* thumb and track color */
+    scrollbar-width: 0px;
+  }
+    .carousel {
+        width: 100%;
+        position: relative;
+      }
+      
+      .carousel-container {
+        display: flex;
+        overflow: hidden;
+      }
+      
+      .carousel-item {
+        flex: 0 0 100%;
+        transition: transform 0.5s ease-in-out;
+      }
+      
+      .carousel-item img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .carousel-prev,
+      .carousel-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #000;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .carousel-prev {
+        left: 10px;
+      }
+      
+      .carousel-next {
+        right: 10px;
+      }
+  
+  .carousel::before {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+  }
+  
+  .carousel::after {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+  }
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  
+  /* Style the cards within the "men" section */
+  #categories .categories .men {
+     /* Adjust the width as needed */
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: filter 0.3s ease;
+  }
+  
+  /* Style the card image */
+  #categories .categories .men .card-image {
+    width: 310px;
+    height: 400px;
+    object-fit: fill;
+  }
+  
+  /* Style the text within the cards */
+  #categories .categories .men .param {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+  }
+  /* CSS code for horizontal scrollable cards */
+
+.showcase {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    text-align: center;
+
+  }
+  
+  .men-card {
+    flex: 0 0 auto;
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  /* Optional: If you want to hide the scrollbar */
+  .showcase::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Optional: If you want to style the scrollbar */
+  .showcase {
+    scrollbar-width: thin;
+    scrollbar-color: #888888 #f5f5f5;
+  }
+  
+  .showcase::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+  }
+  
+  .showcase::-webkit-scrollbar-thumb {
+    background-color: #888888;
+    border-radius: 10px;
+  }
+  
+  .checked{
+    color: orange;
+  }
+.photo{
+    width: 310px;
+    height: 400px;
+    object-fit: fill;
+}
+.men-card{
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: filter 0.3s ease;
+
+}
+  #foot {
+    margin-top: 4rem;
+    background-color: #24252A;
+    padding: 30px;
+    text-align: center;
+    border-top:2px solid #ccc;
+    
+    
+    
+  }
+  
+  #foot .foo {
+    margin-bottom: 30px;
+  }
+  
+  #foot h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  #foot p {
+    margin: 15px 0;
+  }
+  
+  #foot a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  #foot a:hover {
+    background-color: rgb(0, 43, 46);
+  }
+  
+  #foot ul.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 19px;
+  }
+  
+  #foot ul.footer-links li {
+    display: inline-block;
+    margin-right: 1px;
+  }
+  
+  #foot .fa {
+    font-size: 20px;
+    color: white;
+    margin-right: 12px;
+  }
+  
+  .icons #facebook:hover {
+    background-color: rgb(59, 89, 152);
+  }
+  
+  .icons #twitter:hover {
+    background-color: rgb(29, 161, 242);
+  }
+  
+  .icons #insta:hover {
+    background-color: rgb(193, 53, 132);
+  }
+  
+  .icons #pinterest:hover {
+    background-color: rgb(189, 8, 28);
+  }
+  
+ 
